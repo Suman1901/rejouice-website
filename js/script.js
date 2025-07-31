@@ -161,7 +161,7 @@ topLoader.to("#loader", {
     display: "none"
 })
 }
-// loader()
+loader()
 
 
 function menuBtn(){

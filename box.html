@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+      /* .container {
+        display: grid;
+        grid-template-columns: 49% 49%;
+        grid-template-rows: 100vh 100vh 100vh;
+        gap: 2%;
+      }
+      .box {
+        border: 1px solid red;
+      }
+      .box1{
+        background: plum;
+        grid-column: 1/3;
+      }
+      .box2 {
+        background: rgb(147, 204, 62);
+      }
+      .box3 {
+        background: rgb(165, 165, 75);
+      }
+      .box4 {
+        background: gray;
+      } */
+
+      body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loop-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.loop-track {
+  display: flex;
+  gap: 20px;
+  width: max-content; /* ✅ this makes the track as wide as its children */
+}
+
+.loop-box {
+  width: 100px;
+  height: 100px;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+/* Colors */
+.red { background-color: #e63946; }
+.blue { background-color: #1d3557; }
+.green { background-color: #2a9d8f; }
+.yellow { background-color: #e9c46a; }
+.purple { background-color: #8338ec; }
+.orange { background-color: #f77f00; }
+
+
+
+    .icon{
+      width: 79px;
+      height: 24px;
+    }
+
+    .ourLogo{
+      width: 79px;
+      height: 24px;
+      background: #2a9d8f;
+    }
+
+    </style>
+  </head>
+  <body>
+    <!-- <div class="containe">
+      <div class="box1 box">1</div>
+      <div class="box2 box">2</div>
+      <div class="box3 box">3</div>
+      <div class="box4 box">4</div>
+    </div> -->
+    <svg class="ourLogo">
+      <use href="assets/logo.svg#fwa-logo"></use>
+    </svg>
+
+    <div class="loop-container">
+      <div class="loop-track" id="loopTrack">
+        <div class="loop-box red"></div>
+        <div class="loop-box blue"></div>
+        <div class="loop-box green"></div>
+        <div class="loop-box yellow"></div>
+        <div class="loop-box purple"></div>
+        <div class="loop-box orange"></div>
+      </div>
+    </div>
+
+  <svg class="icon">
+    <use href="assets/logo.svg#fwa-logo"></use>
+  </svg>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="box.js"></script>
+  </body>
+</html>

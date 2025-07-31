@@ -1,0 +1,493 @@
+@font-face{
+    font-family: 'mainFont';
+    src : url("../fonts/SuisseIntl.ttf")
+}
+@font-face {
+    font-family: 'headingFont';
+    src: url(../fonts/Fontspring-DEMO-allroundgothic-medium.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: mainFont;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+p, ul, ol, h1,h2,h3,h4,h5,h6,li{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* page1  */
+
+.page1{
+    width: 100%;
+    height: 100vh;
+    background: blanchedalmond;
+    position: relative;
+}
+
+.page1 .video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+#page1-content{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+.nav-sec{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    width: 100%;
+    position: fixed;
+    align-items: center;
+    
+}
+.nav-sec .growth-accelerator,.menus li a{
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.nav-sec .menus{
+    display: flex;
+
+}
+.nav-sec .contact{
+    font-size: 0.9rem;
+    cursor: pointer;
+    font-weight: 600;
+}
+.menus li{
+    list-style: none;
+    padding-right: 1rem !important;
+}
+.menus li a{
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+}
+
+.fa-solid.fa-arrow-right{
+    rotate: 311deg;
+}
+#page1-content .brandName{
+    font-size: 24.8vw;
+    font-weight: 100;
+    line-height: 27vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    z-index: -2;
+}
+
+.brandName span{
+    font-family: headingFont;
+    display: inline-block;
+}
+#cursor{
+    width: 6vw;
+    height: 6vw;
+    background: rgb(19, 19, 19);
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+    transform: translate(-50%, -50%);
+}
+#cursor h5{
+    color: white;
+    font-size:1vw;
+    font-weight: 600;
+    text-transform: capitalize;
+} 
+.menu-btn{
+    border: none;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    font-weight: 600;
+    background: #6e6e6e51;
+    color: white;
+    display: none;
+}
+.nav-sec .menu-list{
+    display: block !important;
+    position: absolute;
+    background: black;
+    width: 100vw;
+    top: 0;
+    height: auto;
+    z-index: -1;
+    left: 0;
+    padding: 15rem 2rem !important;
+}
+.menu-list li a{
+    font-size: 10vw;
+
+}
+
+
+/* page2  */
+.page2{
+    background: black;
+    color: white;
+    padding: 3rem 2rem 15rem 2rem;
+}
+.page2 .explore-services{
+    font-size: 4.1vw;
+    font-weight: 400;
+}
+.page2 .line{
+    width: 100%;
+    height: 1px;
+    background: gray;
+    margin: 4rem 0 1.4rem 0;
+}
+.now-our-identity{
+    width: 50%;
+}
+.now-our-identity p{
+    font-size: 1.2vw;
+    line-height: normal;
+}
+.now-our-identity .learnMoreText{
+    color: white;
+    font-size: 1.2vw;
+}
+
+
+/* page3  */
+.page3{
+    background: black;
+        padding: 2rem 2rem 14rem;
+    color: white;
+}
+.highlight{
+    display: flex;
+    justify-content: space-between;
+}
+.highlight p{
+    font-size: 1.3vw;
+}
+.page3 .our-work{
+    display: grid;
+    grid-template-columns: 49% 49%;
+    grid-template-rows: 100vh 100vh;
+    gap: 2%;
+}
+.page3 .rivian{
+    background-image: url(../images/Z1r5Y5bqstJ98aaF_rivian.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    background-position: center center;
+    grid-column: 1/3;
+}
+
+.rivianIcon{
+    width: 140px;
+    height: 30px;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.page3 .rivian:hover .rivian-video{
+    transform:scale(1) translate(-50%, -50%); 
+    opacity: 1;
+}
+.insideVideo{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: scale(0) translate(-50%, -50%);
+    transition: transform 0.9s ease, opacity 0.9s ease;
+    z-index: 1;
+    opacity: 0;
+}
+.insideVideo .video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+video::-webkit-media-controls-timeline {
+  display: none !important;
+}
+
+.oura{
+    background-image: url(../images/Z2AYnZbqstJ98i2G_oura-abdul-ovaice-photography-cd-21.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+}
+.ouraIcon{
+    width: 57px;
+    height: 19px;
+}
+.oura:hover .insideVideo{
+    transform:scale(1) translate(-50%, -50%); 
+    opacity: 1;
+}
+
+.moxion{
+    background-image: url(../images/trak.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    background-position: center;
+}
+.moxion:hover .insideVideo{
+    transform:scale(1) translate(-50%, -50%); 
+    opacity: 1;
+}
+
+.moxionIcon{
+    width: 79px;
+    height: 14px;
+}
+.b-logo{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+
+/* page4 */
+.page4{
+    padding: 25vh 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.brand-logo{
+    width: 9vw;
+    height: 30px;
+}
+.page4 img{
+    width: auto;
+    height: 40px;
+}
+.brand-logo img{
+    width: auto;
+    height: 100%;
+}
+
+
+/* page5 */
+.page5{
+    margin: 2rem;
+    border-top: 1px solid gray;
+}
+.page5 .highlight{
+    padding: 1rem 0;
+}
+.rejouice-under-box{
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    position: relative;
+}
+.ring-box{
+    background-image: url(../images/ring.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.e-commerce{
+    background-image: url(../images/seeting\ place.avif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+
+
+.swiper {
+    width: 100%;
+    height: 65vh;
+}
+
+.swiper-slide {
+    font-size: 18px;
+    background: #f5f5f5fa;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 27% !important;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.industry-box{
+    height: 64%;
+}
+
+.fwaLogo{
+    width: 179px;
+    height: 24px;
+}
+
+.engagement-box{
+    height: 64%;
+    background: black;
+    color: white;
+}
+.classic-text{
+    color: gray;
+}
+.learn-sec{
+    position: absolute;
+    bottom: 25px;
+}
+.rejouice-driving-box{
+    height: 64%;
+}
+
+.rejouice-rivian-box{
+    background-image: url(../images/rejouice-rivience\ img.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: white;
+}
+.rejouice-noovo-box{
+    height: 64%;
+}
+.successfull-text{
+    color: gray;
+}
+ .icon{
+    width: 79px;
+    height: 24px;
+ }
+
+
+/* page6 */
+
+.page6{
+    padding: 7rem 2rem;
+}
+
+.page6 .approch-heading{
+    font-size: 5vw;
+    margin-bottom: 6rem !important;
+}
+.page6 .approach-list{
+    border-top: 1px solid #929292;;
+    padding: 2rem 0;
+}
+.approch-point p{
+    width: 70%;
+    font-size: 1.23rem;
+    color: black;
+    line-height: normal;
+}
+.approch-video-sec{
+    margin-top: 10%;
+}
+.approch-video-sec video{
+    width: 100%;
+}
+
+
+/* footer-sec */
+
+.footer-sec{
+    padding: 3rem 2rem;
+    background: black;
+    color: white;
+}
+.footer-sec .foot-heading{
+    padding-bottom: 3rem !important;
+}
+.footer-sec .sign-up{
+    padding-top: 3rem !important;
+}
+.footer-sec .email{
+    outline: none;
+    background: none;
+    border: none;
+    width: 95%;
+    padding-top: 0.5rem;
+}
+
+.foot-menus .foot-menu-list{
+    padding-bottom: 5rem !important;
+}
+.right-arrow{
+    rotate: none !important;
+    color: gray;
+}
+.foot-menu-list li{
+    list-style: none;
+    padding-bottom: 0.5rem !important;
+}
+.foot-menu-list li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+.socail-media-link li{
+    list-style: none;
+    padding-bottom: 0.5rem !important;
+}
+.socail-media-link li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+.social .socail-media-link{
+    padding-bottom: 5rem !important;
+}
+.email-input-box {
+    border-bottom: 1px solid white;
+}
+
+
+
+/* loader */
+#loader{
+    width: 100%;
+    height: 100%;
+    background: black;
+    position: fixed;
+    top: 0;
+    z-index: 50;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+#loader h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
